@@ -48,7 +48,7 @@ Portfolio-Site/
 ### 🧩 Clone the Repository
 
 ```bash
-git clone https://github.com/kmrabhayak/Portfolio-Site.git
+git clone https://github.com/kmrabhay07/Portfolio-Site.git
 ```
 ---
 ### 💡 Run Locally
