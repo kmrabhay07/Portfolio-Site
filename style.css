@@ -1046,8 +1046,28 @@ body {
   gap: 6px;
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--accent-indigo);
+  color: var(--text-secondary);
   text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.project-link:hover {
+  color: var(--text-primary);
+}
+
+.project-link.live-link {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  font-weight: 700;
+}
+
+.project-link.live-link:hover {
+  background: rgba(16, 185, 129, 0.22);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+  transform: translateY(-1px);
 }
 
 .project-client-tag {
