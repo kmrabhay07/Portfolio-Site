@@ -3,369 +3,757 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay Kumar</title>
+    <title>Abhay Kumar | Software Engineer — Backend & Distributed Systems</title>
+    <meta name="description" content="Portfolio of Abhay Kumar — Software Engineer with 2 years of experience building scalable backend systems, Spring Boot microservices, Kafka event streams, and Azure cloud solutions.">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
-    
-    <!-- scroll button section -->
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#home"><span> Abhay's </span>Portfolio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#education" class="menu-btn">Education</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Project</a></li>
-                <li><a href="#about" class="menu-btn">Resume</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-               </ul>
-               <div class="menu-btn">
-                   <i class="fas fa-bars"></i>
-                </div>
-         </div>
+
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Abhay<span class="logo-dot">.</span>Kumar<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
     </nav>
 
-    <!-- home section start  -->
-    <section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Hello, My name is</div>
-            <div class="text-2">Abhay Kumar</div>
-            <div class="text-3">I'm CSE Undergrad <span class="typing"></span></div>
-            <a href="mailto:ak24nov2002@gmail.com">Hire me</a>
-        </div>
-     
-
-<!-- social media section -->
-
-     <div class="wrapper">
-        <div class="icon linkedin">
-          <div class="tooltip">
-  Linkedin</div>
-        <span> <a href="https://www.linkedin.com/in/kmrabhay/" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
-         </div>
-  <div class="icon twitter">
-          <div class="tooltip">
-  Twitter</div>
-        <span> <a href="https://twitter.com/kmr_abhay07/" target="_blank"><i class="fab fa-twitter"></i></a></span>
-         </div>
-  <div class="icon instagram">
-         <div class="tooltip">
-  Instagram</div>
-        <span> <a href="https://www.instagram.com/kmr_abhay/" target="_blank"><i class="fab fa-instagram"></i></a></span>
-         </div>
-  <div class="icon github">
-        <div class="tooltip">
-  Github</div>
-        <span> <a href="https://github.com/kmrabhayak" target="_blank"><i class="fab fa-github"></i></a></span>
-         </div>
-            <div class="icon facebook">
-              <div class="tooltip">
-    Facebook</div>
-        <span> <a href="https://www.facebook.com/akabhaykumar25/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
-            </div>
-   </div>
-  
-        </div>
-  </div>
-    </div>
-     </section>
-
-
-
-
-    <!-- about section start-->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/image3.jpg" alt="">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>Software Engineer @ Tech Mahindra (Client: AT&T)</span>
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Abhay Kumar and I'm a <span class="typing-2"></span></div>
-                    <p>My self Abhay Kumar. 
-
-                        I am pursuing my Bachelor of Technology(B.Tech) degree in Computer Science and Engineering from Himachal Pradesh Technical University.
-                        
-                        I am technology enthusiastic. I love to do Front-End and ML Enthusiast.
-                        
-                        My hobbies are listening music and spending time to my friends, watching movies and series.
-                        
-                        My Strength is takes Initiative to work independently, Good leadership skill, Adaptable to any kind of situation in estranged group & Helping tendency.
-                        
-                        My Short term goal is to get the job in reputed company.
-                        
-                        My Long term goal is to become more responsible and knowledgeable personality and on respectable position.
-                        
-                        That's all about me! my quote is <strong>"Life is all about grabbing the opportunity".
-                        
-                        "And I believe in destiny of life."    
-                        </strong>
-                        <br>
-                        <strong>Thank You!!!</strong>for visiting my page
-                        <br>
-                        <br>
-                        <strong>Name:</strong> Abhay Kumar
-                        <br>
-                        <strong>Website:</strong> https://kmrabhayak.github.io/Portfolio-Site/
-                        <br>
-                        <strong>Official Email:</strong> ak24nov2002@gmail.com
-                        
-
-                    </p>
-                    <a href="https://drive.google.com/file/d/1RzZdeYNqQw3rG3s61DeMrGbPsbMRrxm0/view?usp=sharing" target="_blank" >My Resume</a>
-                </a>
-                    </div>
-                </div>
-            </div>
-         </div>
-        </section>
-
-
-        <!-- Education section start-->
-    <section class="education" id="education">
-        <div class="max-width">
-            <h2 class="title">My Education</h2>
-            <div class="edu-content">
-                <div class="card">
-                <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <div class="text">B.Tech(Computer Science and Engineering)</div>
-                <p>Himachal Pradesh Technical University, Hamirpur
-                    <br>
-                    (2020-2024)
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Abhay Kumar</span>
+                </h1>
+                
+                <h2 class="hero-subtitle">
+                    I build <span class="typing" id="typing-text"></span>
+                </h2>
+                
+                <p class="hero-desc">
+                    Backend Engineer with 2 years of experience specializing in high-performance <strong>Spring Boot microservices</strong>, <strong>Apache Kafka</strong> event streaming, <strong>Apache Cassandra & Oracle DB</strong>, and <strong>Microsoft Azure</strong> cloud architectures.
                 </p>
-                </div>
+
+                <!-- Quick Stats Grid -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">35%</div>
+                        <div class="stat-label">Latency Reduced</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Microservices Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Automated Tests</div>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <div class="box">
-                    <i class="fas fa-university"></i>
-                    <div class="text">Senior Secondary Education (XII<sup>th</sup>)</div>
-                    <p>Goverment Sr. Sec School, Daroh, Himachal Pradesh
-                        <br>
-                        H.P Board (HPBOSE)
-                        <br>
-                        (2018-2020)
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fa-solid fa-briefcase"></i> View Experience
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fa-solid fa-code"></i> Explore Projects
+                    </a>
+                    <a href="mailto:ak24nov2002@gmail.com" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="hero-socials">
+                    <span class="social-label">Connect with me:</span>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kmrabhay/" target="_blank" rel="noopener" class="social-btn linkedin" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/kmrabhayak" target="_blank" rel="noopener" class="social-btn github" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:ak24nov2002@gmail.com" class="social-btn email" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+918091109624" class="social-btn phone" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code/Terminal Visual Card -->
+            <div class="hero-visual">
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">abhay-kumar.java</div>
+                        <div class="terminal-action"><i class="fa-solid fa-terminal"></i></div>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-keyword">package</span> com.abhay.portfolio;
+
+<span class="code-annotation">@Service</span>
+<span class="code-keyword">public class</span> <span class="code-class">BackendEngineer</span> {
+    <span class="code-keyword">private final String</span> name = <span class="code-string">"Abhay Kumar"</span>;
+    <span class="code-keyword">private final String</span> role = <span class="code-string">"Software Engineer"</span>;
+    <span class="code-keyword">private final String</span> client = <span class="code-string">"AT&amp;T @ Tech Mahindra"</span>;
+    <span class="code-keyword">private final String</span> location = <span class="code-string">"Bengaluru, Karnataka"</span>;
+
+    <span class="code-keyword">public List</span>&lt;<span class="code-class">String</span>&gt; <span class="code-func">getCoreExpertise</span>() {
+        <span class="code-keyword">return List</span>.of(
+            <span class="code-string">"Java 17/21 &amp; Spring Boot 3"</span>,
+            <span class="code-string">"Apache Kafka Event Streaming"</span>,
+            <span class="code-string">"Apache Cassandra &amp; Oracle DB"</span>,
+            <span class="code-string">"Azure Cloud Microservices"</span>,
+            <span class="code-string">"High-Throughput REST APIs"</span>
+        );
+    }
+}</code></pre>
+                    </div>
+                    <div class="terminal-footer">
+                        <div class="status-indicator">
+                            <span class="status-dot"></span> System Status: <strong>100% Operational</strong>
+                        </div>
+                        <div class="build-tag">Spring Boot 3.x • Java 17</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Architecting Robust Enterprise Systems</h2>
+                <p class="section-subtitle">Bridging engineering precision with modern cloud-native scalability.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <h3>Engineering Philosophy</h3>
+                    <p>
+                        I am a <strong>Software Engineer with 2 years of experience</strong> architecting scalable backend systems, event-driven pipelines, and distributed microservices for <strong>AT&T at Tech Mahindra</strong>.
                     </p>
-                    </div>
-                    </div>
-
-                <div class="card">
-                    <div class="box">
-                    <i class="fas fa-school"></i>
-                    <div class="text">Secondary Education (X<sup>th</sup>)</div>
-                    <p>Dhauladhar Convent School Bhawarna
-                        <br>
-                        H.P Board (HPBOSE)
-                        <br>
-                        (2018)
+                    <p>
+                        My core strengths lie in <strong>system modernization</strong>, reducing infrastructure costs through cross-subscription consolidation, eliminating data redundancy in Apache Cassandra, and migrating legacy architectures to clean, resilient Java Spring Boot services with zero production downtime.
                     </p>
+                    
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h4>Distributed Microservices</h4>
+                                <p>Orchestration & chaining across 5+ interdependent enterprise services.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <h4>Event-Driven Streaming</h4>
+                                <p>Kafka & Azure Event Hubs pipelines with 35% throughput gains.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-database"></i></div>
+                            <div>
+                                <h4>High-Volume Data</h4>
+                                <p>Schema design & query performance tuning on Cassandra and Oracle DB.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <div>
+                                <h4>Cloud & Reliability</h4>
+                                <p>Microsoft Azure, Key Vault, CI/CD, and 200+ Spock/Mockito tests.</p>
+                            </div>
+                        </div>
                     </div>
-                   </div>
 
-
-            </div>
-         </div>
-        </section>
-
-        <!-- skills section start -->
-        <section class="skills" id="skills">
-            <div class="max-width">
-                <h2 class="title">My Skills</h2>
-                <div class="skills-content">
-                    <div class="column left">
-                        <div class="text">My creative skills & expriences.</div>
-                        <p>I am a team player and most importantly an idea champion. I have a knack of listening more than what I speak and perhaps, that is why I tend to gel well with team members and generate ideas from them. I make sure that everyone get a chance to voice his idea and thus, is equally involved in the project/job. Having said that, I believe I shall bring value to the project, for I shall be able to manage and involve the multi ethnic members of the team.</p>
-                        <a href="https://www.linkedin.com/in/kmrabhay/" target="_blank">See More</a>
+                    <div class="about-contact-bar">
+                        <div class="contact-pill">
+                            <i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India
+                        </div>
+                        <div class="contact-pill">
+                            <i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (2020 – 2024)
+                        </div>
+                        <div class="contact-pill">
+                            <i class="fa-solid fa-award"></i> Bravo & Pat on Back Winner
+                        </div>
                     </div>
-                    <div class="column right">
-                        <div class="bars">
-                            <div class="info">
-                                <span>Python</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="line c"></div>
+                </div>
+
+                <!-- Education & Quick Bio Card -->
+                <div class="about-edu-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-graduation-cap header-icon"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline-compact">
+                        <div class="timeline-compact-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020 – 2024</div>
+                            <div class="timeline-title">Bachelor of Technology (B.Tech)</div>
+                            <div class="timeline-sub">Computer Science & Engineering</div>
+                            <div class="timeline-org">Himachal Pradesh Technical University, Hamirpur (H.P, India)</div>
                         </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>HTML/CSS/NodeJs/ReactJs</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="line html"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>C/C++</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="line javascript"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>Java</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="line python"></div>
-                        </div>
-                        <!-- <div class="bars">
-                            <div class="info">
-                                <span>R</span>
-                                <span>50%</span>
-                            </div> -->
-                            <!-- <div class="line java"></div>
-                        </div> -->
-                        <div class="bars">
-                            <div class="info">
-                                <span>DBMS/MYSQL</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="line dbms"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>OPERATING SYSTEM: WINDOWS/LINUX/UNIX/MACOS</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="line operating"></div>
+                        <div class="timeline-compact-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 – 2020</div>
+                            <div class="timeline-title">Senior Secondary Education (XII)</div>
+                            <div class="timeline-sub">Science Stream</div>
+                            <div class="timeline-org">Government Sr. Sec School, Daroh (HPBOSE)</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Work Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Real-world impact in telecommunications and enterprise cloud backends.</p>
+            </div>
 
-        <!-- project section start -->
-        <section class="project" id="project">
-            <div class="max-width">
-                <h2 class="title">My Projects</h2>
-                <div class="study owl-study">
-                    <div class="card">
-                        <div class="box">
-                        <img src="images/dia.jpg" alt="">
-                        <div class="text">Diabetes Prediction Application using Machine Learning</div>
-                        <p>I have made a project on diabetes prediction. The objective is to predict whether the person has Diabetes or not based on various features suach as
-
-                            Pregnancies
-                            Insulin Level
-                            Age
-                            BMI. The data set that has used in this project has taken from the kaggle . "This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage." and used a simple random forest classifier.
-                            <br>
-                            • Technology/Tools:  Flask , Python, Jupyter notebook, HTML, CSS etc.
-                            <br>
-                            •  <a href= "https://github.com/kmrabhayak/Diabetes-Predictor" target="_blank"><strong><u>Link</u></strong></a></p>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <div class="exp-company-logo">
+                                <i class="fa-solid fa-tower-broadcast"></i>
                             </div>
+                            <div>
+                                <h3 class="exp-role">Software Engineer</h3>
+                                <div class="exp-company">Tech Mahindra Limited — Client: <strong>AT&T</strong></div>
+                            </div>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-badge current"><i class="fa-solid fa-circle-dot"></i> Sep 2024 – Present</span>
+                            <span class="exp-location"><i class="fa-solid fa-map-pin"></i> Bengaluru, Karnataka</span>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <div class="box">
-                        <img src="images/ft.jpg" alt="">
-                        <div class="text">Analysis of Fitness Data</div>
-                        <p>In this project i do analysis of fitness data, i done this in my summer training, this project was assigned by my company in which was trainee.
-                            <br>
-                            • Technology/Tools: kaggle, Jupyter-notebook.
-                            <br>
-                            •  <a href= "https://github.com/kmrabhayak/Analysis-of-Fitness-Data/" target="_blank"><strong><u>Link</u></strong></a></p>
-                            </div>
-                    </div>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Driving backend engineering for mission-critical AT&T enterprise infrastructure, designing event-driven microservices, cloud optimizations, and high-throughput data processing systems.
+                        </p>
+                        
+                        <ul class="exp-bullets">
+                            <li>
+                                <strong>Cross-Subscription Azure Architecture Optimization:</strong> Centralized shared microservices in Azure Subscription B while securely integrating with Subscription A. Eliminated redundant Cassandra instances, reduced infrastructure cost, and achieved <strong>zero client downtime</strong> during transition.
+                            </li>
+                            <li>
+                                <strong>High-Throughput IMEI Processing Engine:</strong> Led end-to-end design of an event-driven IMEI validation pipeline using <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong>, and <strong>Apache Cassandra</strong>, achieving a <strong>35% processing speed boost</strong>.
+                            </li>
+                            <li>
+                                <strong>Distributed Microservice Orchestration:</strong> Architected Spring Boot microservices implementing reliable chaining and orchestration patterns across 5 interconnected backend services.
+                            </li>
+                            <li>
+                                <strong>Legacy System Modernization:</strong> Migrated <strong>15+ legacy PL/SQL procedures</strong> to Java Spring Boot REST microservices (XML + JSON), slashing API response latency by <strong>~30%</strong>.
+                            </li>
+                            <li>
+                                <strong>High-Volume Database Engineering:</strong> Performed schema design, query indexing, and connection tuning across <strong>Apache Cassandra</strong> and <strong>Oracle DB</strong> for heavy transactional loads.
+                            </li>
+                            <li>
+                                <strong>Automated Testing & Quality:</strong> Authored <strong>200+ unit & component tests</strong> using <strong>Groovy Spock</strong> and <strong>Mockito</strong>, establishing comprehensive test coverage.
+                            </li>
+                            <li>
+                                <strong>Production Operations:</strong> Implemented structured logging, telemetry monitoring, Azure Key Vault secrets management, and resolved mission-critical production incidents.
+                            </li>
+                        </ul>
 
-                    <div class="card">
-                        <div class="box">
-                        <img src="images/jr.png" alt="">
-                        <div class="text">Jarvis Voice Assistant</div>
-                        <p>Voice Assistant like Siri, Cortona, Google Assistant.
-                            <br>
-                            It can send email, tell time/date/day, search for you in wikipedia, open music, tell whether.
-                            <br>
-                            • Technology/Tools: Python
-                            <br>
-                            •  <a href= "https://github.com/kmrabhayak/Jarvis-AI-using-Python" target="_blank"><strong><u>Link</u></strong></a></p>
+                        <div class="exp-awards">
+                            <div class="award-chip">
+                                <i class="fa-solid fa-trophy"></i> Bravo Award (Tech Mahindra)
                             </div>
-                    </div>
+                            <div class="award-chip">
+                                <i class="fa-solid fa-award"></i> Pat on Back Award (Tech Mahindra)
+                            </div>
+                        </div>
 
-                  
+                        <div class="exp-tags">
+                            <span>Java 17</span>
+                            <span>Spring Boot 3</span>
+                            <span>Apache Kafka</span>
+                            <span>Apache Cassandra</span>
+                            <span>Azure Event Hubs</span>
+                            <span>Oracle DB</span>
+                            <span>Groovy Spock</span>
+                            <span>REST APIs</span>
+                            <span>Azure Key Vault</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Matrix</span>
+                <h2 class="section-title">Skills & Competencies</h2>
+                <p class="section-subtitle">Core technologies and frameworks I use to build scalable systems.</p>
+            </div>
 
-        <!-- contact section  starting -->
-        <section class="contact" id="contact">
-            <div class="max-width">
-                <h2 class="title">Contact me</h2>
-                <div class="contact-content">
-                <div class="columb left">
-                    <div class="text">Get in Touch</div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Abhay Kumar</div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title"> Palampur, Himachal Pradesh</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head"> Email</div>
-                                <div class="sub-title"> <a href="mailto:ravianandfbg@gmail.com">ak24nov2002@gmail.com</a> </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="info">
-                                <div class="head">Contact Number</div>
-                                <div class="sub-title"><a href="tel:+91-9521384395">+91-8091109624</a></div>
-                            </div>
-                        </div>
+            <div class="skills-grid">
+                <!-- Category 1: Backend & Microservices -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-indigo"><i class="fa-brands fa-java"></i></div>
+                        <h3>Backend & Architecture</h3>
                     </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">Java 17 / 21</span>
+                        <span class="skill-pill highlight">Spring Boot 3.x</span>
+                        <span class="skill-pill">Microservices Architecture</span>
+                        <span class="skill-pill">RESTful API Design</span>
+                        <span class="skill-pill">Distributed Orchestration</span>
+                        <span class="skill-pill">Spring Security & JWT</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">PL/SQL Migration</span>
                     </div>
-                     </div>
-                     </form>
+                </div>
+
+                <!-- Category 2: Messaging & Streaming -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-cyan"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3>Event Streaming & Messaging</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">Apache Kafka</span>
+                        <span class="skill-pill highlight">Azure Event Hubs</span>
+                        <span class="skill-pill">Event-Driven Architecture</span>
+                        <span class="skill-pill">Message Queuing</span>
+                        <span class="skill-pill">Fault-Tolerant Pipelines</span>
+                        <span class="skill-pill">Asynchronous Processing</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Databases & Storage -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-emerald"><i class="fa-solid fa-database"></i></div>
+                        <h3>Databases & Data Storage</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">Apache Cassandra</span>
+                        <span class="skill-pill highlight">MongoDB Atlas</span>
+                        <span class="skill-pill">Oracle Database</span>
+                        <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">NoSQL Schema Design</span>
+                        <span class="skill-pill">Query Tuning & Indexing</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Cloud & DevOps -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-purple"><i class="fa-solid fa-cloud"></i></div>
+                        <h3>Cloud, DevOps & Platforms</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">Microsoft Azure</span>
+                        <span class="skill-pill">Azure App Configuration</span>
+                        <span class="skill-pill">Azure Key Vault</span>
+                        <span class="skill-pill">GitHub Actions CI/CD</span>
+                        <span class="skill-pill">Docker Containers</span>
+                        <span class="skill-pill">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Category 5: Testing & Quality -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-rose"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h3>Testing & Code Quality</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">Groovy Spock Framework</span>
+                        <span class="skill-pill highlight">JUnit 5</span>
+                        <span class="skill-pill">Mockito</span>
+                        <span class="skill-pill">Component Testing</span>
+                        <span class="skill-pill">Integration Testing</span>
+                        <span class="skill-pill">Code Reviews & Quality Gates</span>
+                    </div>
+                </div>
+
+                <!-- Category 6: Tools & AI Productivity -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon icon-amber"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Tools & AI-Assisted Dev</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill highlight">IntelliJ IDEA</span>
+                        <span class="skill-pill">Postman</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill highlight">Claude AI</span>
+                        <span class="skill-pill">GitHub Copilot</span>
+                        <span class="skill-pill">AI-Accelerated Engineering</span>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-        </section>
-        
+        </div>
+    </section>
 
-        
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects & Systems</h2>
+                <p class="section-subtitle">Real-world implementations demonstrating full-stack, distributed, and AI engineering.</p>
+            </div>
 
-        <!-- footer section start -->
-        <footer>
-            <span>Created By <strong>Abhay Kumar</strong> | <span class="far fa-copyright"></span> <i class="fas fa-infinity"></i> All rights are reserved.</span>
-        </footer>
+            <div class="projects-grid">
+                <!-- Project 1: OmniSpace -->
+                <div class="project-card featured">
+                    <div class="project-banner">
+                        <div class="project-badge">Full Stack System</div>
+                        <div class="project-icon-large"><i class="fa-solid fa-cube"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Angular 18</span>
+                            <span>Spring Boot 3</span>
+                            <span>MongoDB Atlas</span>
+                            <span>HTML5 Canvas</span>
+                        </div>
+                        <h3 class="project-title">OmniSpace — Real Estate & 2D Interior Studio</h3>
+                        <p class="project-desc">
+                            Enterprise full-stack marketplace combining property listings with an interactive 2D Interior Design Studio. Features Top-Down floor plans, Front Elevation wall views, live furniture drag-and-drop, paint swatches, undo/redo state stack, and PNG export.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/kmrabhay07/omnispace-webapp" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 2: IMEI Processing Engine -->
+                <div class="project-card">
+                    <div class="project-banner bg-blue">
+                        <div class="project-badge">Distributed Pipeline</div>
+                        <div class="project-icon-large"><i class="fa-solid fa-tower-cell"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Apache Kafka</span>
+                            <span>Azure Event Hubs</span>
+                            <span>Cassandra</span>
+                            <span>Java 17</span>
+                        </div>
+                        <h3 class="project-title">AT&T IMEI Event-Driven Stream Engine</h3>
+                        <p class="project-desc">
+                            High-throughput distributed pipeline processing high-volume IMEI validation streams with zero client downtime, fault tolerance, and 35% processing speed optimization over previous infrastructure.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-client-tag"><i class="fa-solid fa-shield-halved"></i> Enterprise AT&T Project</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 3: Diabetes Predictor ML -->
+                <div class="project-card">
+                    <div class="project-banner bg-green">
+                        <div class="project-badge">Machine Learning</div>
+                        <div class="project-icon-large"><i class="fa-solid fa-heart-pulse"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Scikit-Learn</span>
+                            <span>Random Forest</span>
+                        </div>
+                        <h3 class="project-title">Diabetes Prediction Web Application</h3>
+                        <p class="project-desc">
+                            Predictive machine learning web application using Random Forest classifier trained on clinical diagnostic features (Insulin, BMI, Glucose) to predict diabetes probability with interactive web interface.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/kmrabhayak/Diabetes-Predictor" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 4: Smart Voice AI -->
+                <div class="project-card">
+                    <div class="project-banner bg-purple">
+                        <div class="project-badge">AI / Automation</div>
+                        <div class="project-icon-large"><i class="fa-solid fa-microphone-lines"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SpeechRecognition</span>
+                            <span>Pyttsx3</span>
+                            <span>Automation</span>
+                        </div>
+                        <h3 class="project-title">Jarvis Voice AI Assistant</h3>
+                        <p class="project-desc">
+                            Automated voice assistant system in Python capable of executing voice commands, Wikipedia queries, email dispatch, music control, and ambient system actions through natural speech recognition.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/kmrabhayak/Jarvis-AI-using-Python" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Certifications & Achievements Section -->
+    <section class="section certs-section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications & Honors</h2>
+                <p class="section-subtitle">Verified industry credentials and organizational recognition.</p>
+            </div>
 
-    <script src="js/script.js" ></script>
-    
+            <div class="certs-grid">
+                <!-- Cert 1: Azure Fundamentals -->
+                <div class="cert-card">
+                    <div class="cert-icon icon-azure"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Microsoft Certified</div>
+                        <h3 class="cert-title">Azure Fundamentals (AZ-900)</h3>
+                        <p class="cert-desc">Foundational mastery of cloud services, Azure architecture, compute, networking, security, and governance.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Azure AI Fundamentals -->
+                <div class="cert-card">
+                    <div class="cert-icon icon-azure"><i class="fa-solid fa-brain"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Microsoft Certified</div>
+                        <h3 class="cert-title">Azure AI Fundamentals (AI-900)</h3>
+                        <p class="cert-desc">Core artificial intelligence and machine learning workload concepts and capabilities on Microsoft Azure.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Oracle Cloud Infrastructure -->
+                <div class="cert-card">
+                    <div class="cert-icon icon-oracle"><i class="fa-solid fa-cloud-bolt"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Oracle University</div>
+                        <h3 class="cert-title">OCI 2023 Certified Foundations Associate</h3>
+                        <p class="cert-desc">Expertise in Oracle Cloud Infrastructure core services, database engines, security architectures, and IAM.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 4: Claude Certified Developer -->
+                <div class="cert-card">
+                    <div class="cert-icon icon-claude"><i class="fa-solid fa-sparkles"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Anthropic</div>
+                        <h3 class="cert-title">Claude Certified Developer — Foundations</h3>
+                        <p class="cert-desc">Advanced LLM prompting, tool-use integration, agentic workflows, and AI-accelerated software engineering.</p>
+                    </div>
+                </div>
+
+                <!-- Award 1: Bravo Award -->
+                <div class="cert-card award-special">
+                    <div class="cert-icon icon-trophy"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Tech Mahindra Recognition</div>
+                        <h3 class="cert-title">Bravo Award (AT&T Account)</h3>
+                        <p class="cert-desc">Conferred for exceptional technical performance, dedication, and impactful contribution to AT&T microservices delivery.</p>
+                    </div>
+                </div>
+
+                <!-- Award 2: Pat on Back Award -->
+                <div class="cert-card award-special">
+                    <div class="cert-icon icon-medal"><i class="fa-solid fa-medal"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">Tech Mahindra Recognition</div>
+                        <h3 class="cert-title">Pat on Back Award</h3>
+                        <p class="cert-desc">Recognized for rapid problem solving, system optimization, and maintaining high software quality under tight deadlines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Interested in collaborating, hiring, or discussing backend architectures? Let's talk!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Direct Contact Information -->
+                <div class="contact-info-card">
+                    <h3>Contact Details</h3>
+                    <p>Feel free to reach out directly via email, phone, or LinkedIn. I am actively open to discussing engineering opportunities.</p>
+
+                    <div class="contact-items-list">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Email Address</span>
+                                <a href="mailto:ak24nov2002@gmail.com" class="contact-val">ak24nov2002@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Phone / WhatsApp</span>
+                                <a href="tel:+918091109624" class="contact-val">(+91) 8091109624</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">LinkedIn Profile</span>
+                                <a href="https://www.linkedin.com/in/kmrabhay" target="_blank" rel="noopener" class="contact-val">linkedin.com/in/kmrabhay</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-val">Bengaluru, Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Message Form -->
+                <div class="contact-form-card">
+                    <h3>Send a Direct Message</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="e.g. Backend Engineering Opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="form-toast" class="form-toast"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Abhay<span class="logo-dot">.</span>Kumar<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Software Engineer specializing in scalable microservices & distributed event systems.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/kmrabhay/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/kmrabhayak" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:ak24nov2002@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                &copy; 2026 Abhay Kumar. Built with precision and modern web standards.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>
