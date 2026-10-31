@@ -1,0 +1,40 @@
+/* Fluid interaction layer — lightweight, progressive enhancement */
+:root { --fluid-ease:cubic-bezier(.22,1,.36,1); }
+body { isolation:isolate; }
+.fluid-cursor-light {
+ position:fixed;left:0;top:0;width:460px;height:460px;border-radius:50%;
+ pointer-events:none;z-index:0;opacity:0;transform:translate3d(-1000px,-1000px,0);
+ background:radial-gradient(circle,rgba(99,102,241,.115),rgba(6,182,212,.045) 35%,transparent 70%);
+ will-change:transform;transition:opacity .35s ease;
+}
+.fluid-cursor-light.is-visible {opacity:1;}
+.hero-content,.hero-visual,.container {position:relative;}
+/* Soft ambient movement behind the hero, without layout shifts. */
+.hero::after {
+ content:"";position:absolute;width:min(50vw,650px);aspect-ratio:1;border-radius:50%;
+ background:radial-gradient(circle,rgba(90,81,255,.17),rgba(8,171,213,.06) 43%,transparent 70%);
+ top:0;right:0;pointer-events:none;z-index:-1;animation:fluid-orbit 15s ease-in-out infinite alternate;
+}
+@keyframes fluid-orbit {from{transform:translate3d(0,-18px,0) scale(.95)}to{transform:translate3d(-50px,55px,0) scale(1.12)}}
+.fluid-card {--fluid-x:50%;--fluid-y:50%;--fluid-rotate-x:0deg;--fluid-rotate-y:0deg;position:relative;isolation:isolate;transform-style:preserve-3d;}
+.fluid-card::before {
+ content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+ background:radial-gradient(360px circle at var(--fluid-x) var(--fluid-y),rgba(118,139,255,.13),transparent 65%);
+ opacity:0;transition:opacity .4s ease;
+}
+.fluid-card:hover::before,.fluid-card:focus-within::before {opacity:1;}
+.fluid-card > * {position:relative;z-index:1;}
+/* Preserve original reveal effects: tilt only after an element has been revealed. */
+.fluid-card.revealed,.fluid-card:not(.reveal-ready) {
+ transform:perspective(1100px) rotateX(var(--fluid-rotate-x)) rotateY(var(--fluid-rotate-y));
+ transition:transform .45s var(--fluid-ease),border-color .25s ease,box-shadow .35s ease,opacity .6s ease;
+}
+.fluid-card.revealed:hover,.fluid-card:not(.reveal-ready):hover {box-shadow:0 24px 60px rgba(0,0,0,.3),0 0 35px rgba(99,102,241,.10);}
+.fluid-magnetic {--fluid-mx:0px;--fluid-my:0px;transform:translate3d(var(--fluid-mx),var(--fluid-my),0);transition:transform .42s var(--fluid-ease),box-shadow .25s ease,background .25s ease;}
+.fluid-magnetic:hover {transform:translate3d(var(--fluid-mx),calc(var(--fluid-my) - 2px),0);}
+.fluid-magnetic:active {transform:translate3d(var(--fluid-mx),var(--fluid-my),0) scale(.98);}
+.fluid-ripple {position:absolute;inset:auto;width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.25);pointer-events:none;transform:translate(-50%,-50%) scale(0);animation:fluid-ripple .65s ease-out forwards;}
+@keyframes fluid-ripple {to {opacity:0;transform:translate(-50%,-50%) scale(20);}}
+@media(max-width:1024px){.fluid-card.revealed,.fluid-card:not(.reveal-ready){transform:none!important;}.fluid-magnetic,.fluid-magnetic:hover {transform:none;}}
+@media(hover:none),(pointer:coarse){.fluid-cursor-light{display:none;}.fluid-card::before{display:none;}.fluid-magnetic,.fluid-magnetic:hover{transform:none;}}
+@media(prefers-reduced-motion:reduce){.fluid-cursor-light{display:none!important;}.hero::after{animation:none!important;}.fluid-card.revealed,.fluid-card:not(.reveal-ready),.fluid-magnetic,.fluid-magnetic:hover{transform:none!important;}.fluid-ripple{display:none!important;}}
