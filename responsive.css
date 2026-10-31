@@ -1,0 +1,116 @@
+/* Responsive layout layer: phones, tablets, laptops and wide displays.
+   Loaded after the theme and fluid effects to keep one source of overrides. */
+:root { --page-gutter:clamp(16px,3.2vw,40px); }
+html { overflow-x:clip; }
+body { min-width:320px; }
+.container,.nav-container {width:100%;max-width:1320px;padding-inline:var(--page-gutter);}
+:is(.hero-content,.hero-visual,.about-grid,.about-text-card,.about-edu-card,.contact-grid,.contact-info-card,.contact-form-card,.project-card,.project-body,.experience-card,.exp-role-group,.skill-category-card,.cert-card,.terminal-card) {min-width:0;}
+img,svg,video,canvas {max-width:100%;height:auto;}
+.hero-container {grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,3.5vw,52px);}
+.hero-title {font-size:clamp(2.2rem,4.3vw,4.8rem);overflow-wrap:break-word;}
+.hero-subtitle {overflow-wrap:anywhere;}
+.hero-desc {max-width:62ch;}
+.hero-stats {grid-template-columns:repeat(4,minmax(0,1fr));}
+.stat-label {overflow-wrap:break-word;}
+.terminal-card {max-width:100%;overflow:hidden;}
+.terminal-header,.terminal-footer {gap:12px;}
+.terminal-title {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.terminal-body {max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;}
+.terminal-body pre {width:max-content;min-width:100%;white-space:pre;overflow:visible;}
+.about-grid {grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);}
+.contact-grid {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);}
+.projects-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+.skills-grid,.certs-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+.project-footer {gap:12px;flex-wrap:wrap;}
+.project-link {min-height:40px;}
+.exp-role-group {flex-wrap:wrap;}
+.exp-bullets li {overflow-wrap:anywhere;}
+.contact-val {overflow-wrap:anywhere;}
+/* Seven navigation items need the compact menu before they collide with the CTA. */
+@media(max-width:1120px) {
+ .nav-container {min-height:68px;}
+ .nav-toggle {display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;border-radius:12px;}
+ .nav-menu {position:fixed;top:68px;right:0;left:auto;width:min(360px,100%);max-width:100%;height:calc(100dvh - 68px);padding:20px 24px 32px;display:flex;align-items:stretch;flex-direction:column;gap:4px;overflow-y:auto;overscroll-behavior:contain;background:rgba(12,18,32,.98);border-left:1px solid var(--border-color);box-shadow:-14px 20px 45px rgba(0,0,0,.4);visibility:hidden;opacity:0;pointer-events:none;transform:translateX(100%);transition:transform .32s cubic-bezier(.22,1,.36,1),opacity .2s ease,visibility .32s;}
+ .nav-menu.active {right:0;visibility:visible;opacity:1;pointer-events:auto;transform:translateX(0);}
+ .nav-menu li,.nav-link {width:100%;}
+ .nav-link {display:flex;align-items:center;min-height:48px;padding:10px 14px;border-radius:10px;}
+ .nav-link:hover,.nav-link.active {background:rgba(99,102,241,.12);}
+ .nav-link::after,.nav-link.active::after {display:none;}
+ .nav-actions {gap:8px;}
+ .hero {min-height:auto;padding-top:112px;}
+ .hero-container {grid-template-columns:1fr;gap:40px;}
+ .hero-content {max-width:850px;margin-inline:auto;}
+ .hero-visual {width:min(100%,800px);margin-inline:auto;}
+ .hero-title {font-size:clamp(2.5rem,6vw,4.6rem);}
+ .hero-stats {max-width:750px;}
+ .about-grid,.contact-grid {grid-template-columns:1fr;}
+ .skills-grid,.certs-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .terminal-card,.terminal-card:hover {transform:none;}
+}
+@media(min-width:1121px) and (max-width:1380px) {
+ .nav-menu {gap:clamp(10px,1.6vw,24px);}
+ .nav-link {font-size:.88rem;}
+ .nav-logo {font-size:1.05rem;}
+ .nav-actions .btn {padding-inline:16px;}
+}
+@media(max-width:768px) {
+ :root {--page-gutter:20px;}
+ .section {padding-block:clamp(50px,8vw,72px);}
+ .section-header {margin-bottom:30px;}
+ .hero {padding-block:104px 56px;}
+ .hero-container {gap:32px;text-align:left;}
+ .hero-title {font-size:clamp(2.15rem,7.7vw,3.8rem);}
+ .hero-subtitle {font-size:clamp(1.1rem,4.7vw,1.65rem);}
+ .hero-desc {font-size:.95rem;}
+ .badge-pill {margin:0 0 20px;white-space:normal;text-align:left;line-height:1.5;}
+ .hero-stats {grid-template-columns:repeat(2,minmax(0,1fr));margin-inline:0;}
+ .hero-buttons {justify-content:flex-start;gap:10px;}
+ .hero-socials {justify-content:flex-start;}
+ .projects-grid,.skills-grid,.certs-grid {grid-template-columns:1fr;}
+ .about-highlights-grid {grid-template-columns:1fr;}
+ .about-text-card,.about-edu-card,.experience-card,.contact-info-card,.contact-form-card {padding:clamp(18px,4vw,28px);}
+ .project-banner {height:clamp(142px,28vw,195px);}
+ .exp-header {align-items:flex-start;}
+ .exp-meta {align-items:flex-start;}
+ .footer-content {align-items:center;}
+ .terminal-body {font-size:.76rem;}
+ .terminal-footer {font-size:.72rem;}
+ /* Keep touch targets easily tappable. */
+ .nav-toggle,.social-btn,.footer-socials a,.scroll-top-btn {min-width:44px;min-height:44px;}
+ .fluid-card.revealed,.fluid-card:not(.reveal-ready),.fluid-magnetic,.fluid-magnetic:hover {transform:none!important;}
+}
+@media(max-width:480px) {
+ :root {--page-gutter:16px;}
+ .nav-logo {font-size:clamp(.85rem,3.8vw,1.05rem);letter-spacing:-.6px;}
+ .nav-container {gap:8px;}
+ .nav-actions {gap:4px;}
+ .nav-actions .btn {font-size:.79rem;padding:9px 11px;min-height:42px;}
+ .hero {padding-top:98px;}
+ .hero-title {font-size:clamp(2rem,9vw,2.85rem);}
+ .hero-buttons {display:grid;grid-template-columns:1fr;gap:10px;width:100%;}
+ .hero-buttons .btn {width:100%;min-height:48px;}
+ .hero-stats {gap:10px;}
+ .stat-card {padding:14px 8px;}
+ .stat-number {font-size:1.35rem;}
+ .stat-label {font-size:.75rem;}
+ .terminal-header {padding-inline:12px;}
+ .terminal-body {font-size:.69rem;padding:12px;}
+ .terminal-footer {padding:10px 12px;}
+ .hero-socials {gap:10px;}
+ .social-icons {flex-wrap:wrap;}
+ .project-body {padding:19px;}
+ .contact-item {gap:10px;}
+ .footer-links {gap:12px;justify-content:center;}
+ .section-title {font-size:clamp(1.8rem,8vw,2.35rem);}
+ .badge-pill {font-size:.74rem;}
+}
+@media(max-width:360px) {
+ .nav-logo {font-size:.78rem;}
+ .nav-actions .btn {padding:8px;font-size:.72rem;}
+ .nav-toggle {min-width:40px;}
+ .hero-title {font-size:1.95rem;}
+ .social-label {width:100%;}
+}
+@media(prefers-reduced-motion:reduce) {
+ .nav-menu {transition:none;}
+}
